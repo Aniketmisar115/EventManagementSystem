@@ -10,7 +10,7 @@ def about(request):
     events= [
         {
         "name":"Freshers",
-        "organiser":"NAAC commitiee ",
+        "organiser":"NSS commitiee ",
         "special_guest":"Secretary Of JCOET ",
         "date"  :"20/04/2022 ",
         "venue" :"At sir vishveshwaraya hall "

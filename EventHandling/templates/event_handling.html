@@ -3,7 +3,7 @@
     <head>
         <title>Event Mangement System</title>
     </head>
-    <body>
+    <body style="background-color:antiquewhite"></body>
         <div>
             <h4>Hi! {{display_name}},this is a event handling page </h4>
             {% for i in event_details %}
@@ -14,5 +14,43 @@
             <p>venue={{i.venue}} </p>
             {% endfor %}
         </div>
+            <h1>Add The Event</h1>
+            <form action="/action_page.php">
+                <fieldset>
+                 <legend>Event</legend>
+                 <label for="fname">Event name:</label>
+                 <input type="text" id="fname" name="fname"><br><br>
+                 <label for="lname">Organiser: </label>
+                 <input type="text" id="lname" name="lname"><br><br>
+                 <label for="specialguest">Special_Guest: </label>
+                 <input type="special guest" id="name" name="special guest"><br><br>
+                 <label for="venue">Venue:</label>
+                 <input type="venue" id="name" name="venue"><br><br>
+                  <label for="Date">Date:</label>
+                 <input type="date" id="date" name="date"><br><br>
+                 <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+               
+            <h1>Event Details</h1>
+            <fieldset>
+            <ol type="1" value="1"></ol>
+            <P><li>"First_Event":"Freshers"</li></P>
+            </ol>
+            <p><li>"organiser":"NSS commitiee"</li></p>
+            <P><li>"special_guest":"Secretary Of JCOET "</li></P>
+            <P><li>"date"  :"20/04/2022 "</li></P>
+            <P><li>"venue" :"At sir vishveshwaraya hall "</li></P>
+            </fieldset>
+            
+            <fieldset>
+                 <ol type="1" value="1">
+                 <P><li>"second_event":"Farewell"</li></P>
+                 <P><li>"organiser":"computer Dept"</li></P>
+                 <P><li>"special_guest":"Principal Of JCOET"</li></P>
+                 <P><li>"date"  :"21/04/2022"</li></P>
+                 <P><li>"venue" :"At sir Bhatkar hall"</li></P>
+                </ol>
+            </fieldset>
     </body>
 </html>
