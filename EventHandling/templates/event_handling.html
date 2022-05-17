@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event Mangement System</title>
+    </head>
+    <body>
+        <div>
+            <h4>Hi! {{display_name}},this is a event handling page </h4>
+            {% for i in event_details %}
+            <p>name={{i.name}}</p>
+            <p>organiser={{i.organiser}} </p>
+            <p>special_guest={{i.special_guest}} </p>
+            <p>date={{i.date}} </p>
+            <p>venue={{i.venue}} </p>
+            {% endfor %}
+        </div>
+    </body>
+</html>
